@@ -9,7 +9,7 @@
 <body>
     <h2>MVC 패턴으로 회원인증하기</h2>
     <p>
-        <strong>${ authMessage }</strong>
+        <strong>${ authMessage }</strong> 
         <br />        
         
         <!-- 
