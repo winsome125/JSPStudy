@@ -87,7 +87,7 @@ public class MVCBoardDAO extends DBConnPool {
 				dto.setSfile(rs.getString(7));
 				dto.setDowncount(rs.getInt(8)); // 숫자이므로 getInt()사용
 				dto.setPass(rs.getString(9));
-				dto.setVisitcoutn(rs.getInt(10));
+				dto.setVisitcount(rs.getInt(10));
 				
 				board.add(dto);
 			}

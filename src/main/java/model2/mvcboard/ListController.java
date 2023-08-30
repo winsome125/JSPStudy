@@ -82,7 +82,7 @@ public class ListController extends HttpServlet {
 		map.put("pageNum", pageNum);
 		
 		// View(JSP페이지)로 전달할 데이터를 request영역에 저장
-		req.setAttribute("boardLisis", boardLists);
+		req.setAttribute("boardLists", boardLists);
 		req.setAttribute("map", map);
 		// 포워드 
 		req.getRequestDispatcher("/14MVCBoard/List.jsp").forward(req, resp);

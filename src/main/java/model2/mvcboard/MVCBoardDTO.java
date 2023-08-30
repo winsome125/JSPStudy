@@ -13,7 +13,7 @@ public class MVCBoardDTO {
 	private String sfile;
 	private int downcount;  // 다운로드 카운트 int형
 	private String pass;
-	private int visitcoutn;  // 조회수 int형
+	private int visitcount;  // 조회수 int형
 	
 	
 	// getter/setter
@@ -71,11 +71,11 @@ public class MVCBoardDTO {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
-	public int getVisitcoutn() {
-		return visitcoutn;
+	public int getVisitcount() {
+		return visitcount;
 	}
-	public void setVisitcoutn(int visitcoutn) {
-		this.visitcoutn = visitcoutn;
+	public void setVisitcount(int visitcount) {
+		this.visitcount = visitcount;
 	}
 	
 	
