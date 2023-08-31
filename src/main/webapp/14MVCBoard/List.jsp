@@ -57,7 +57,7 @@
 		            		${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}
 		            	</td>
 		            	<td align="left">
-		                	<a href="../mvcboard/view.do?idx=${ rwo.idx }">
+		                	<a href="../mvcboard/view.do?idx=${ row.idx }">
 		                	${ row.title }
 		                	</a>
 		            	</td> 
