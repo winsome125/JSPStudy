@@ -21,6 +21,7 @@ public class MemberDTO {
 	/*
 	 정보은닉된 멤버변수에 접근하기 위헤 public으로 정의된 getter, setter를 정의한다.
 	 */
+	// getter/setter
 	public String getId() {
 		return id;
 	}
@@ -28,7 +29,6 @@ public class MemberDTO {
 		this.id = id;
 	}
 	
-	// getter/setter
 	public String getPass() {
 		return pass;
 	}

@@ -3,6 +3,10 @@
 <%@page import="model1.board.BoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!-- 로그인 페이지에 오랫동안 머물러 세션이 삭제되는 경우가 있으므로
+글쓰기 처리 페이지에서도 반드시 로그인을 확인해야한다. -->
+<%@ include file = "./IsLoggedIn.jsp"%>
+
 <%
 String title = request.getParameter("title");
 String content = request.getParameter("content");
@@ -15,7 +19,7 @@ dto.setId(session.getAttribute("UserId").toString());
 
 BoardDAO dao = new BoardDAO(application);
 
-// 기존과 같이 게시물 1개르 등록할 때 사용
+// 기존과 같이 게시물 1개를 등록할 때 사용
 // int iResult = dao.insertWrite(dto);
 
 // 페이징 테스트를 위해 100개의 게시물을 한번에 입력
