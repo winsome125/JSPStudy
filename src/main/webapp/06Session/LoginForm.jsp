@@ -11,6 +11,10 @@
                 "" : request.getAttribute("LoginErrMsg") %>
     </span>
     <%
+    /*
+    session영역에 해당 속성값이 있는지 확인한다.
+    즉, session영역에 데이터가 없다면 로그아웃 상태이므로 로그인 폼을 웹브라우저에 출력한다.
+   */
     if (session.getAttribute("UserId") == null) { 
     %>
     <script>
