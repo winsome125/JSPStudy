@@ -43,7 +43,7 @@ if(isExist==true) {
         	입력한 아이디는 사용할 수 있습니다. <br />
         	<input type="button" value="아이디 사용하기" onclick="idUse();" />
         	<form name="overlapFrm">
-        		<input type="hid den" name="retype_id" value="<%=id %>" />
+        		<input type="hidden" name="retype_id" value="<%=id %>" />
         	</form>
         </p>
 <% 

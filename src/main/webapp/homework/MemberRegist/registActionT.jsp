@@ -33,7 +33,7 @@ dto.setSms(sms);
 // DAO객체생성 및 insert처리
 RegistDAO dao = new RegistDAO(application);
 int result = dao.registInsert(dto);
-if (result == 1) {
+if (result==1) {
 	out.println("입력성공");
 }
 else {

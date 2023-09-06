@@ -43,7 +43,7 @@ public class RegistDAO extends JDBConnect {
 		// 초기값은 true로 설정. 중복된 아이디가 없는 경우.
 		boolean retValue = true;
 		// 중복된 아이디가 있는지 확인하기 위한 쿼리문.
-		String sql = "SELECT COUNT(*_ FROM regist_member WHERE id=?";
+		String sql = "SELECT COUNT(*) FROM regist_member WHERE id=?";
 		try {
 			// prepared객체 생성 및 인파라미터 설정
 			psmt = con.prepareStatement(sql);

@@ -56,10 +56,14 @@ function formValidate(frm){
 
     //패스워드 입력 확인
     if(frm.pass1.value==''){
-        alert("패스워드를 입력해주세요.");frm.pass1.focus();return false;
+        alert("패스워드를 입력해주세요.");
+        frm.pass1.focus();
+        return false;
     }
     if(frm.pass2.value==''){
-        alert("패스워드 확인을 입력해주세요.");frm.pass2.focus();return false;
+        alert("패스워드 확인을 입력해주세요.");
+        frm.pass2.focus();
+        return false;
     }
     //만약 입력한 패스워드가 일치하지 않는다면..
     if(frm.pass1.value!=frm.pass2.value){
